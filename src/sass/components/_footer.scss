@@ -1,0 +1,17 @@
+footer {
+  ul {
+    li {
+      a {
+        color: #b0b0b0;
+        font-size: 14px;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+  p {
+    color: #b0b0b0;
+    font-size: 14px;
+  }
+}

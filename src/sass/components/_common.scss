@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+p {
+  line-height: 1.5;
+  letter-spacing: 1.2;
+}
+.pm {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 37px;
+}
+.fs12{
+  font-size: 12px;
+}
+h2 {
+
+}
+ul {
+  padding-left: 0 !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+}
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+ul li {
+  list-style-type: none !important;
+}
+.dropdown {
+  position: relative;
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 5px 20px;
+    a {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
