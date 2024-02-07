@@ -44,7 +44,10 @@ ul li {
     display: block; }
 
 .site-header {
-  background-color: rgba(0, 0, 0, 0.34); }
+  background-color: rgba(0, 0, 0, 0.34);
+  position: relative;
+  z-index: 999;
+  transition: top 0.3s ease; }
   .site-header a {
     color: white; }
   .site-header ul li {
@@ -65,6 +68,32 @@ ul li {
 
 .mobile-header ul li a {
   padding: 3px 10px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.eihe-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #FFFFFFBD;
+  color: #000;
+  padding: 15px;
+  text-align: center;
+  z-index: 9999;
+  transition: all .5s ease;
+  opacity: 0; }
+  .eihe-caption:hover {
+    opacity: 1; }
 
 footer ul li a {
   color: #b0b0b0;
