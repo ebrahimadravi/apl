@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APL</title>
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2"
+      data-wpacu-preload-font="1"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/dancingscript/v24/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2"
+      data-wpacu-preload-font="1"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2"
+      data-wpacu-preload-font="1"
+      crossorigin
+    />
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <div class="top-header blue-header text-white py-3 d-none d-lg-block">
+      <ul class="row">
+        <li class="col-lg-8">
+          <div class="d-flex">
+            <span class="mx-2">
+              <i class="far fa-envelope font-sm mx-1"></i>
+              info@vadindustries.com
+            </span>
+            <span class="mx-2">
+              <i class="fa-brands fa-whatsapp font-sm mx-1"></i>
+              +91 8866243442
+            </span>
+          </div>
+        </li>
+        <li class="col-lg-4">
+          <div class="d-flex justify-content-end">
+            <span class="d-block mx-2">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="d-block mx-2">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+            <span class="d-block mx-2">
+              <a
+                href="#"
+                class="btn dropdown-toggle lang-btn text-white"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Inida</a></li>
+                <li><a class="dropdown-item" href="#">Austrellia</a></li>
+                <li><a class="dropdown-item" href="#">US</a></li>
+              </ul>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header class="site-header not-home-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="site-logo col-md-2">
+            <a href="#">
+              <img src="../src/images/logo.jpeg" alt="logo" width="100" />
+            </a>
+          </div>
+          <i
+            class="fa fa-bars d-block d-md-none position-relative"
+            aria-hidden="true"
+          ></i>
+          <nav class="col-md-10 d-none d-md-block">
+            <ul class="d-flex justify-content-end" style="height: 50px">
+              <li class="mt-2">
+                <a href="#">Home</a>
+              </li>
+              <li class="dropdown mt-2">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                  <a href="#">Web Design</a>
+                  <a href="#">Graphic Design</a>
+                  <a href="#">SEO</a>
+                </div>
+              </li>
+              <li class="dropdown mt-2">
+                <a href="#">PRODUCTS</a>
+                <div class="dropdown-content">
+                  <a href="#">Oil Seeds</a>
+                  <a href="#">Graphic Design</a>
+                  <a href="#">SEO</a>
+                </div>
+              </li>
+              <li class="mt-2"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <header class="mobile-menu d-md-none">
+      <nav class="mb-nav">
+        <ul>
+          <li class="text-white d-flex justify-content-between px-4 pt-3">
+            <span></span>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li>
+            <a href="" class="px-3 py-2 d-block text-white">Home</a>
+          </li>
+          <li class="mb-dropdown">
+            <a href="" class="px-3 py-2 d-block text-white">About Us</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Web Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Graphic Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">SEO</a>
+          </li>
+          <li class="mb-dropdown">
+            <a href="" class="px-3 py-2 d-block text-white">Products</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Web Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Graphic Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">SEO</a>
+          </li>
+          <li class="">
+            <a href="" class="px-3 py-2 d-block text-white">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div>
+          <img src="../src/images/about-banner.png" class="w-100" alt="" />
+        </div>
+        <div class="container">
+          <div class="mt-4">
+            <h2>Welcome to VAD Industries Private Limited</h2>
+            <hr />
+            <p>
+              The vision of growth has been tall since VAD Industries Pvt. Ltd.
+              the organization proclaimed it with their sprightly transaction in
+              import and export. Established in the heart of Gujarat, from the
+              contribution of two successful import-export leaders – Anil Vaniya
+              and Ashish Vaniya. With their absolute aim of achieving higher
+              business targets by maintaining quality performance and offering
+              diverse services, they are successful in concreting the position
+              of VAD Industries Pvt. Ltd. as one of the genuine and trusted
+              Indian export organization.
+            </p>
+            <p>
+              Since, VAD Industries Pvt. Ltd. started importing and exporting in
+              oil seeds, indian spices, dehydrated products, rice and
+              pulses/other, and more-they have come a long way. They have
+              supplemented new dimensions and ventures into unexplored territory
+              with their supply chain management, focusing all aspects of moving
+              material from the vendor through the manufacturing process to the
+              final customer. The foundation has been designed with solid trust,
+              genuinity, and reputation. For enduring their journey of
+              continuous success and growth, their beliefs are strictly rooted
+              to the principles of integrity, offering superiority & values,
+              forming close & mutually prolific relationships with their
+              patrons, farmers, manufacturers, and suppliers.
+            </p>
+            <h6>OUR TEAM:</h6>
+            <p>
+              Both the employees and business partners have made a major
+              contribution to VAD Industries strong foundation. We are proud to
+              have such team players incorporating years of expertise in
+              providing customers with a range of import and export solutions.
+              Our leaders approach is always intended to provide visibility,
+              reliability and consistency of product and unwavering commitment
+              towards customer satisfaction. Advent our customers with
+              distinguished qualities and fulfil their product-related
+              requirements with full fidelity is the prime priority of our team.
+              In addition, our logistics program makes it easy makeup to date
+              communication with clients and made a customer-centric approach,
+              and express delivery before committed time frame.
+            </p>
+            <h6>RESPONSIBLE: ENSURES PRODUCT SUPERIORITY, SAFETY & COST:</h6>
+            <p>
+              Our honesty and transparency in business are always committed to
+              serving our consumers with quality and timely shipment in a very
+              convenient manner. Owing to our right pricing policy distinguished
+              qualities and exemplary customer support, we are able to maintain
+              an indelible position in the markets. Individually tailored
+              products ensure stringent quality controls with shortest possible
+              delivery time to reach your home port. Our logistics
+              professionals-the energetic crew behind our client-centric
+              approach and organized results are the most important resources
+              that we incorporate in our services committed to you.
+            </p>
+            <p>
+              Further, the integrated supply chain management enables our
+              customers to respond to a quick fluctuation in the marketplace and
+              minimize their investment risks and associated operational costs.
+            </p>
+            <h6>VALUES & BELIEFS:</h6>
+            <p>
+              Values & Beliefs In order to ensure customers feel valued, we
+              discover resolutions very preciously, pleasing customers’
+              needs-both existing and underlying. Furthermore, we give high
+              importance to a product and provide them comprehensive product
+              knowledge with the intention of assisting the best value for their
+              money and enhancing customer satisfaction.
+            </p>
+            <p>
+              The core of our values and beliefs-respect for our clienteles,
+              workforces, and the environment enable us to stand behind our
+              products and ensures excellent customer service.
+            </p>
+            <p>
+              Finest & cost-effective products to our traders is our primary
+              goal. It’s our belief that in-depth knowledge of products and
+              marketplace are essential pillars to accomplish this goal. Our
+              values are Win-Win for our customer-as knowledge is our base,
+              integrity is our route, and satisfaction is our focus.
+            </p>
+            <h6>BUSINESS ETHICS:</h6>
+            <p>
+              VAD Industries business ethics completely incorporates
+              import-export laws & guidelines and operates in a fair, legal and
+              quality assured manner. At VAD Industries, The groundwork of
+              integrity is based on the standards of business conduct which are
+              envisioned to encounter-commitment, principles, and endeavor to
+              trade fairly and honestly.
+            </p>
+            <p>
+              Our commitment to business reliability doesn`t compete with these
+              factors-product quality, safety, and on-time delivery. In
+              addition, it includes strong policies and an enthusiastic squad
+              liable for answering certain import-export queries, updates on
+              various deliverables and suggestions on a constantly evolving
+              landscape.
+            </p>
+            <p>
+              Being a part of business ethics, our principle certifies that VAD
+              Industries conforms all export, import, and trade compliance laws
+              in all of its global business activities.
+            </p>
+          </div>
+          <ul class="row">
+            <li class="col-md-6">
+              <h6>Value:</h6>
+              <p>
+                diligence in exploring, and developing new business
+                opportunities in the overseas market space. His ability to
+                easily comprehend, identify, communicate, and coordinate with
+                overseas buyers and build business relationship add varies
+                value-based strategies to VAD Industries Pvt. Ltd. business
+                model.
+              </p>
+            </li>
+            <li class="col-md-6">
+              <h4 class="text-center mb-4">Who we are?</h4>
+              <ul class="row">
+                <li class="col-md-6">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-img">
+                        <img src="../src/images/founder1.jpg" alt="" class="w-100" />
+                      </div>
+                      <div class="profile text-center py-2">
+                        <strong class="author d-block">Anil Vaniya</strong>
+                        <span class="designation d-block">Managing Director</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-md-6 mt-4 mt-md-0">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-img">
+                        <img src="../src/images/founder1.jpg" alt="" class="w-100" />
+                      </div>
+                      <div class="profile text-center py-2">
+                        <strong class="author d-block">Anil Vaniya</strong>
+                        <span class="designation d-block">Managing Director</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5 bg-dark py-5">
+      <div class="container">
+        <ul class="row">
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+        </ul>
+
+        <p class="mt-4">© 2022 VLC Spices, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

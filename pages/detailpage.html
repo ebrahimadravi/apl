@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APL</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2"
+      data-wpacu-preload-font="1"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/dancingscript/v24/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2"
+      data-wpacu-preload-font="1"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2"
+      data-wpacu-preload-font="1"
+      crossorigin
+    />
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body class="details-page">
+    <div class="top-header blue-header text-white py-3 d-none d-lg-block">
+      <ul class="row">
+        <li class="col-lg-8">
+          <div class="d-flex">
+            <span class="mx-2">
+              <i class="far fa-envelope font-sm mx-1"></i>
+              info@vadindustries.com
+            </span>
+            <span class="mx-2">
+              <i class="fa-brands fa-whatsapp font-sm mx-1"></i>
+              +91 8866243442
+            </span>
+          </div>
+        </li>
+        <li class="col-lg-4">
+          <div class="d-flex justify-content-end">
+            <span class="d-block mx-2">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="d-block mx-2">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+            <span class="d-block mx-2">
+              <a
+                href="#"
+                class="btn dropdown-toggle lang-btn text-white"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Inida</a></li>
+                <li><a class="dropdown-item" href="#">Austrellia</a></li>
+                <li><a class="dropdown-item" href="#">US</a></li>
+              </ul>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header class="site-header not-home-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="site-logo col-md-2">
+            <a href="#">
+              <img src="../src/images/logo.jpeg" alt="logo" width="100" />
+            </a>
+          </div>
+          <i
+            class="fa fa-bars d-block d-md-none position-relative"
+            aria-hidden="true"
+          ></i>
+          <nav class="col-md-10 d-none d-md-block">
+            <ul class="d-flex justify-content-end" style="height: 50px">
+              <li class="mt-2">
+                <a href="#">Home</a>
+              </li>
+              <li class="dropdown mt-2">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                  <a href="#">Web Design</a>
+                  <a href="#">Graphic Design</a>
+                  <a href="#">SEO</a>
+                </div>
+              </li>
+              <li class="dropdown mt-2">
+                <a href="#">PRODUCTS</a>
+                <div class="dropdown-content">
+                  <a href="#">Oil Seeds</a>
+                  <a href="#">Graphic Design</a>
+                  <a href="#">SEO</a>
+                </div>
+              </li>
+              <li class="mt-2"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <header class="mobile-menu d-md-none">
+      <nav class="mb-nav">
+        <ul>
+          <li class="text-white d-flex justify-content-between px-4 pt-3">
+            <span></span>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li>
+            <a href="" class="px-3 py-2 d-block text-white">Home</a>
+          </li>
+          <li class="mb-dropdown">
+            <a href="" class="px-3 py-2 d-block text-white">About Us</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Web Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Graphic Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">SEO</a>
+          </li>
+          <li class="mb-dropdown">
+            <a href="" class="px-3 py-2 d-block text-white">Products</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Web Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">Graphic Design</a>
+            <a href="#" class="px-3 py-2 d-block text-white">SEO</a>
+          </li>
+          <li class="">
+            <a href="" class="px-3 py-2 d-block text-white">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div>
+          <img
+            src="../src/images/detail-page-banner.png"
+            class="w-100"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <ul class="row mt-5">
+          <li class="col-md-8">
+            <h2 class="heading-blue">Overview of Groundnut Oil</h2>
+            <h3>
+              Leading Groundnut Oil Manufacturers, Suppliers & Exporters From
+              India
+            </h3>
+            <p>
+              Groundnut oil is commonly used in cooking that is derived from
+              groundnut. groundnut oil is naturally sweet and flavored edible
+              oil and is traditionally preferred among indian households as
+              cooking oil. refined oil has a light yellow color and a neutral
+              taste. groundnut oil is extraction of oil from groundnut seed rich
+              in oil contain and quality. it can be used for a variety of
+              purposes, and has the rich flavor of groundnut (peanuts).
+              groundnut oil maintain its purity, oil can be heated to high
+              temperatures, making it ideal for deep-frying and sautéing. which
+              is also why it is the preferred oil for various kinds of
+              traditional dishes. the oil is available in refined, unrefined,
+              cold pressed, and roasted varieties, the latter with a strong
+              peanut flavor and aroma, analogous to sesame oil. it is very high
+              on energy, has a very high burning and smoking point, and contains
+              monounsaturated fats, vitamins a, d, and e. groundnut oils have
+              been a common cooking oil in india for the past few centuries
+              until it was replaced by refined oils about a decade ago. refined
+              oils undergo various chemical and mechanical processes which
+              destroys all the nutrients present in the groundnut oil completely
+              before bottling.
+            </p>
+            <p>
+              Groundnut oil / peanut oil, also known by other names such as
+              groundnut oil, is a type of vegetable oil commonly used in cooking
+              that is derived from peanuts. generally, people use peanut oil in
+              their cooking for the interesting flavor that it gives,
+              particularly the roasted variety, as well as the fact that it is
+              healthier than many types of oil. most of the health benefits of
+              peanut oil come from its diverse types of fatty acids, such as
+              oleic acid, stearic acid, palmitic acid, and linoleic acid, among
+              others manufacturer of groundnut oil supplier, groundnut oil in
+              india. real unrefined cold pressed groundnut/peanut oil is
+              extracted at your freshmill using the traditional wooden mill
+              (kachi ghani/ mara chekku) method where the oil is extracted
+              without heating or any chemical processes. groundnut oil that is
+              extracted using traditional cold pressed methods is highly
+              nutritious and healthy with all the health benefits intact. find
+              groundnut oil manufacturers in india, groundnut oil suppliers in
+              india, groundnut oil exporters in india, groundnut oil importers
+              in india, peanut oil manufacturers in india, peanut oil suppliers
+              in india, peanut oil exporters in india, peanut oil importers in
+              india, gujarat, rajkot, mundra port, nhava sheva port, ahmedabad,
+              junagadh, mumbai, delhi in india and around the world. VAD
+              industries private limited regularly exports to malaysia,
+              indonesia, philippines, thailand, vietnam, saudi arabia, united
+              arab emirates, morocco, kuwait, qatar, uae, usa, singapore,
+              turkey, russia, algeria, jordan, georgia, armenia, yemen, oman,
+              south korea, egypt, china, bahrain, tunisia, afghanistan, south
+              africa, united kingdom.
+            </p>
+            <h3>Groundnut Oil Specifications:</h3>
+            <table class="table table-bordered table-striped">
+              <tr>
+                <th>PROPERTIES</th>
+                <th>VALUES & LIMITS</th>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+            </table>
+            <h3>Container Capacity:</h3>
+            <table class="table table-bordered table-striped">
+              <tr>
+                <th>PROPERTIES</th>
+                <th>VALUES & LIMITS</th>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+              <tr>
+                <td>Product Name:</td>
+                <td>Groundnut Oil / Peanut Oil</td>
+              </tr>
+            </table>
+            <h3>Groundnut Oil Benefits and Uses:</h3>
+            <p>
+              ✓ Groundnut oil is commonly used in cooking that is derived from
+              Groundnut.
+            </p>
+            <p>
+              ✓ Groundnut oil is naturally sweet and flavored edible oil and is
+              traditionally preferred among Indian households as cooking oil.
+            </p>
+            <p>✓ Refined oil has a light yellow color and a neutral taste.</p>
+            <p>
+              ✓ It is very high on energy, has a very high burning and smoking
+              point, and contains monounsaturated fats, Vitamins A, D, and E.
+            </p>
+            <p>✓ Peanut oil has a strong groundnut flavor and aroma.</p>
+            <p>
+              ✓ It is often used for general cooking, and in the case of roasted
+              oil, for added flavor.
+            </p>
+            <p>
+              ✓ The vitamin E helps maintain good skin health, making it look
+              young and healthy.
+            </p>
+          </li>
+          <li class="col-md-4">
+            <div>
+              <a href="#">
+                <img width="100%" src="../src/images/aaa.jpg" alt="" />
+              </a>
+            </div>
+            <h2 class="mt-3">LIST OF OILSEEDS</h2>
+            <ul class="px-4 mt-3 py-3 list-details" style="background: #efefef">
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="#">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span> JAVA PEANUTS </span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="##">
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                  <span>NATURAL SESAME SEEDS</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <section class="py-3" style="background: #f7f7f7">
+        <div class="text-center">
+          <p>OUR</p>
+          <h3>BEST SELLING PRODUCTS</h3>
+          <p>
+            Our company is well known for its "VAD" brand and includes a rich
+            collection of products of the best quality
+          </p>
+          <div class="elementor-divider">
+            <span class="elementor-divider-separator"></span>
+          </div>
+        </div>
+
+        <ul class="selling-product">
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="d-block">
+              <div class="card-inner">
+                <div>
+                  <img src="../src/images/p1.jpg" width="100%" alt="" />
+                </div>
+                <p class="text-center mb-0 py-2">Wheat Flour</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="mt-5 bg-dark py-5">
+      <div class="container">
+        <ul class="row">
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+          <li class="col-md-6 col-lg-3">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <a href="#" class="d-block py-1">Home</a>
+            <a href="#" class="d-block py-1">Aboit</a>
+            <a href="#" class="d-block py-1">Certicatons</a>
+            <a href="#" class="d-block py-1">product</a>
+            <a href="#" class="d-block py-1">private Labeling</a>
+            <a href="#" class="d-block py-1">BLog</a>
+            <a href="#" class="d-block py-1">Infrastructure</a>
+            <a href="#" class="d-block py-1">Contact</a>
+          </li>
+        </ul>
+
+        <p class="mt-4">© 2022 VLC Spices, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

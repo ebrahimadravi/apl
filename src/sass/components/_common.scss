@@ -10,11 +10,25 @@ p {
   font-weight: 300;
   line-height: 37px;
 }
-.fs12{
+.fs12 {
   font-size: 12px;
 }
-h2 {
-
+a:hover {
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dancing Script";
+}
+.font-md {
+  font-size: 28px;
+  line-height: 1.21em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
 }
 ul {
   padding-left: 0 !important;
@@ -49,5 +63,77 @@ ul li {
     .dropdown-content {
       display: block;
     }
+  }
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #870019;
+}
+.form-control {
+  border: 1px solid #9b9090;
+  border-radius: 0;
+}
+.font-sm {
+  font-size: 20px !important;
+}
+.latest-blog {
+  .date {
+    span {
+      display: block;
+      letter-spacing: 0.3em;
+    }
+  }
+  .title {
+    a {
+      font-size: 12px;
+      line-height: 2em;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: "Work sans", sans-serif;
+      &:hover {
+        color: #707070;
+      }
+    }
+  }
+  p {
+    text-transform: capitalize;
+    font-family: "Work sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .read-more {
+    span {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      margin: 0;
+      font-family: "Work sans", sans-serif;
+      font-size: 12px;
+      line-height: 1.5em;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 0;
+      outline: 0;
+      transition: color 0.2s ease-out, background-color 0.2s ease-out,
+        border-color 0.2s ease-out;
+      letter-spacing: 0.2em;
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+
+.banner-btn {
+  bottom: 23px;
+  left: 50%;
+  transform: translate(-50%);
+  &.btn-danger {
+    background-color: rgb(255, 0, 0) !important;
   }
 }

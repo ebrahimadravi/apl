@@ -1,0 +1,62 @@
+.green-underline {
+  &:after {
+    content: "";
+    display: block;
+    color: #a6c152;
+  }
+}
+.border-green {
+  border: 2px solid #a6c152;
+}
+.fa-brands,
+.fab, .fa-user,
+.fa-envelope {
+  font-size: 30px;
+}
+.cct-send-btn {
+  font-size: inherit;
+  line-height: 18px;
+  padding: 12px 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0;
+  font-weight: 600;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #870019;
+  color: #fff;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.slick-dots {
+  display: flex;
+  li {
+    margin: 0 8px;
+    button {
+      border: none;
+      background: none;
+      
+    }
+    &.slick-active {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+.contact-card {
+  max-width: 1240px;
+  margin: 0 auto !important;
+  li {
+    @media(min-width: 768px) {
+      width: calc(50% - 1rem);
+    }
+    @media(min-width: 992px) {
+      width: calc(33.33% - 1rem);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.heading-blue {
+  color: #3e3c6d;
+}
+.blue-header {
+  background-color: #3e3c6d;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #b7d283;
+}
+.list-details {
+  li {
+    a:hover {
+      color: #3e3c6d;
+      font-weight: 700;
+    }
+  }
+}
+.slick-slider {
+  .slick-arrow {
+    position: absolute;
+    z-index: 9999;
+    font-size: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+  .slick-slide {
+    margin: 0 4px;
+  }
+
+  .prev-arrow {
+    left: 0
+ 
+  }
+  .next-arrow {
+    right: 0;
+
+  }
+}

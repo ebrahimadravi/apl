@@ -1,0 +1,20 @@
+.testimonial-section {
+  .qoute {
+    i {
+      font-size: 40px;
+    }
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .slick-dots {
+    margin-top: 100px !important;
+  }
+  .img-top {
+    right: 0;
+  }
+  .img-bottom {
+    left: 0;
+    z-index: 999;
+  }
+}
